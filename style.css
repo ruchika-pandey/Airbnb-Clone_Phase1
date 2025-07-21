@@ -1,0 +1,155 @@
+body,html {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes at least the full viewport height */
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important; /* Prevent horizontal scroll */
+  height: 100%;
+}
+
+.all-listings-title {
+  margin-left: 30px; /* Push it right */
+  /* optionally control font-weight, size */
+}
+
+
+.container {
+  flex-grow: 1; /* Allow the container to take up the remaining vertical space */
+
+}
+
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+  flex-shrink: 0; /* Prevent navbar from shrinking */
+}
+
+
+.site-footer {
+  width: 100%;           /* full width of viewport */
+  background-color: #f8f9fa; /* light background */
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.f-info {
+  max-width: 1200px;    /* max width to keep footer content neat */
+  margin: 0 auto;       /* center inside footer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+
+.card {
+  margin: 0;              /* remove all margins */
+  flex: 1 1 calc(33.333% - 30px); /* 3 cards per row minus gap */
+  box-sizing: border-box;
+  border: none !important;
+  margin-bottom: 0;
+  display: flex;          /* or use grid, just keep consistent */
+  flex-wrap: wrap;
+  gap: 30px;              /* space between cards, vertical + horizontal */
+  padding: 30px;          /* space inside container edges */
+  box-sizing: border-box; /* to include padding in width calculation */
+  margin: 0 auto;         /* center container if it has fixed width */
+  overflow-x: hidden; 
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+  max-width: 300px; /* or pick a number smaller than current */
+  margin: 0 auto;   /* keeps it centered horizontally */
+}
+
+.edit-delete-btn {
+  min-width: 80px; /* Adjust this value as needed */
+}
